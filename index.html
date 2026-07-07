@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Queeres Archiv Hamburg</title>
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet"> -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<section id="intro">
+
+    <div class="intro-message">
+
+        <div class="intro-line">
+            
+          QUEERE GESCHICHTE IST TEIL DIESER STADT
+        </div>
+
+        <div class="intro-subline">
+          Erinnern heißt, Geschichten weiterzuerzählen. <br>
+           Diese Geschichte ist eine davon.
+    
+        </div>
+
+    </div>
+<div id="archive-info">
+
+        <div class="archive-title">
+            
+          vestige
+        </div>
+
+        <div class="archive-action">
+            
+         Archiv queerer Geschichten aus Hamburg
+        </div>
+
+    </div>
+</section>
+
+<!-- REGISTERBLATT -->
+ 
+
+<section id="archive">
+
+  <div id="mirror-bg"></div>
+
+<svg id="paper-mask">
+  <defs>
+    <mask id="holesMask">
+      <rect width="100%" height="100%" fill="white"/>
+      <g id="holeGroup"></g>
+    </mask>
+  </defs>
+
+  <!-- graue Fläche -->
+  <g mask="url(#holesMask)">
+    <rect
+      width="100%"
+      height="100%"
+      fill="#979393"
+    />
+
+     <!-- Punktmuster -->
+    <image
+        href="img/Punktanimation2.png"
+         
+    object-fit="cover"
+        width="100%"
+    height="100%"
+    preserveAspectRatio="xMidYMid slice"
+    opacity="0.3"
+    />
+
+    <image
+      href="img/textured-paper.png"
+      width="100%"
+      height="100%"
+      preserveAspectRatio="xMidYMid slice"
+      opacity="0.5"
+    />
+  </g>
+</svg>
+
+    <div id="archive-info">
+
+        <div class="archive-title">
+            
+          vestige
+        </div>
+
+        <div class="archive-action">
+            
+         Archiv queerer Geschichten aus Hamburg
+        </div>
+
+    </div>
+
+   <!-- <div id="mirror-animation">
+
+    <img src="./img/Punktanimation1.png" class="mirror-frame active">
+    <img src="./img/Punktanimation2.png" class="mirror-frame">
+    <img src="./img/Punktanimation3.png" class="mirror-frame">
+
+</div> -->
+  
+    <div id="holes"></div>
+
+    <div id="fragments"></div>
+
+    <div id="archive-credit">
+    © Ana Molina Caminero <br>
+     HAW Hamburg · 2026
+</div>
+
+</section>
+
+<!-- OVERLAY -->
+
+<section id="overlay">
+
+    <div id="document">
+
+        <div class="document-inner">
+
+            <div id="large-title"></div>
+
+            <div id="year"></div>    
+      
+              <div id="location"></div>
+
+        <div id="story-image">
+
+                <img id="detailImage" src="" alt=""> </div>
+
+            <article id="story-text"></article>
+
+            <button id="closeBtn">
+
+                ← WEITERE GESCHICHTEN ÖFFNEN
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
